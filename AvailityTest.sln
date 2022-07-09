@@ -5,7 +5,7 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AvilityDatabase", "AvilityDatabase\AvilityDatabase.sqlproj", "{6064D047-108E-4C3D-930B-9FED2D0FD8FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csv_import", "csv_import\csv_import.csproj", "{E735A226-97F4-428D-BCB7-E5CD06186DFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVImport", "csv_import\CSVImport.csproj", "{E735A226-97F4-428D-BCB7-E5CD06186DFF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dcoumentProject", "dcoumentProject\dcoumentProject.csproj", "{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}"
 EndProject
