@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AvilityDatabase", "AvilityD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csv_import", "csv_import\csv_import.csproj", "{E735A226-97F4-428D-BCB7-E5CD06186DFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dcoumentProject", "dcoumentProject\dcoumentProject.csproj", "{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
