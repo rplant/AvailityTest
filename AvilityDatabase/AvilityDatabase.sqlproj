@@ -57,4 +57,12 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Customer.sql" />
+    <Build Include="Order.sql" />
+    <Build Include="OrderLine.sql" />
+    <Build Include="SeectSixMonrthTotalByCustomer.sql" />
+    <Build Include="SelectCustomerStartWith.sql" />
+    <Build Include="SelectOrderdLastSizeMonthsByCustomer_.sql" />
+  </ItemGroup>
 </Project>

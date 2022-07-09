@@ -2,7 +2,7 @@
 	@customerid int
 AS
 	With TotalOrders_cte as
-	(select sum(ol.cost)
+	(select sum(ol.Cost)
 	 from orderline ol)
 
 	SELECT *
