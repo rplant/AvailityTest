@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AvilityDatabase", "AvilityDatabase\AvilityDatabase.sqlproj", "{6064D047-108E-4C3D-930B-9FED2D0FD8FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csv_import", "csv_import\csv_import.csproj", "{E735A226-97F4-428D-BCB7-E5CD06186DFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6064D047-108E-4C3D-930B-9FED2D0FD8FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6064D047-108E-4C3D-930B-9FED2D0FD8FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6064D047-108E-4C3D-930B-9FED2D0FD8FA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6064D047-108E-4C3D-930B-9FED2D0FD8FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6064D047-108E-4C3D-930B-9FED2D0FD8FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6064D047-108E-4C3D-930B-9FED2D0FD8FA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E735A226-97F4-428D-BCB7-E5CD06186DFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D549406F-2AAE-40AC-AC2C-7B6F2F5337AB}
+	EndGlobalSection
+EndGlobal
