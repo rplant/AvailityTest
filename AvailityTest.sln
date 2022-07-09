@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csv_import", "csv_import\cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dcoumentProject", "dcoumentProject\dcoumentProject.csproj", "{A0DCEE58-0C62-4869-A9E4-E5D85BC38B36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cvs_tester", "cvs_tester\cvs_tester.csproj", "{49FCDE6E-2D5B-4649-AC2D-B005CCB55039}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "csv_tester", "cvs_tester\csv_tester.csproj", "{49FCDE6E-2D5B-4649-AC2D-B005CCB55039}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LispValidators", "LispValidator\LispValidators.csproj", "{983CAA70-917E-47E5-A732-CF409EB2C71E}"
 EndProject
