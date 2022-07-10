@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsGridComponent implements OnInit {
   results: any[];
+  regEvent: any;
 
 
-  constructor() { }
+  constructor()
+  {
+      this.regEvent.Subscribe()
+  }
 
   ngOnInit() {
   }

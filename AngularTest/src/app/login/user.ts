@@ -1,5 +1,5 @@
 
-export class User
+export interface User
 {
   firstName: string;
   lastName: string;
