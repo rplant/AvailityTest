@@ -1,0 +1,19 @@
+  <table class="table">
+    <thead>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>BPI Number</th>
+        <th>Address</th>
+        <th>Email</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let result of results; let i = index">
+           <td>{{firstName}}</td>
+           <td>{{lastName}}</td>
+           <td>{{bpiNumber}}</td>
+           <td>{{address}}</td>
+           <td>{{email}}</td>
+        </tr>
+    </tbody>
+  </table>
+

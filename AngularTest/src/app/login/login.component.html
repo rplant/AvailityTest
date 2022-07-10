@@ -1,52 +1,51 @@
-<div class="card">
-  <div class="row">
-    <div class="col-33">
-    </div>
-    <div class="col-33">
-    <div class="card-body">
-      <div class="row">
-        <div class="col">
-          First Name:
-        </div>
-        <div class="col">
-          <input type="text" [(ngModel)]="firstName">
-        </div>
+  <div class="card">
+    <div class="row form-group">
+      <div class="col-33">
       </div>
+      <div class="col-33">
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              First Name:
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="firstName">
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="col">
-          Last Name:
-        </div>
-        <div class="col">
-          <input type="text" [(ngModel)]="lastName">
-        </div>
-      </div>
+          <div class="row">
+            <div class="col">
+              Last Name:
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="lastName">
+            </div>
+          </div>
 
-      <div class="row">
-        <div class="col">
-          NPI Number:
-        </div>
-        <div class="col">
-          <input type="text" [(ngModel)]="npiNumber" >
+          <div class="row">
+            <div class="col">
+              NPI Number:
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="npiNumber">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              Address:
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="address">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              Email Address:
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="email">
+            </div>
+          </div>
+          <button (click)="onRegister()">Register</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col">
-          Address:
-        </div>
-        <div class="col">
-          <input type="text" [(ngModel)]="address" >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          Email Address:
-        </div>
-        <div class="col">
-          <input type="text" [(ngModel)]="email" >
-        </div>
-        </div>
-        <button mat-flat-button>Register</button>
-      </div>
-    </div>
-  </div>
