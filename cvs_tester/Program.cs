@@ -13,13 +13,6 @@ namespace csv_tester
 
             var result = csv.readFile(@"c:\\test.txt");
 
-
-            //Console.WriteLine("\n\nSort By Company\n");
-            //result.OrderBy(s => s.insurance).ThenByDescending(v => v.version).ToList().ForEach(s =>
-            //{
-            //    Console.WriteLine($"{s.insurance} {s.firstName} {s.lastName} {s.version}");
-            //});
-
             var groupbyInsurance = from r in result
                                    group r by r.insurance into InsGroup
                                    orderby InsGroup.Key
@@ -34,6 +27,8 @@ namespace csv_tester
                   Console.WriteLine($"{i.lastName} {i.firstName}");
                 }
             }
+
+
 
 
 
