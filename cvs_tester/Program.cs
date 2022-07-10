@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using csv_import;
 
@@ -18,14 +19,22 @@ namespace csv_tester
                                    orderby InsGroup.Key
                                    select InsGroup;
 
+
+
+
             foreach(var n in groupbyInsurance)
             {
-                Console.WriteLine($"Key: {n.Key}");
+                var insName = $"{n.Key}.txt";
+                StreamWriter streamWriter = new StreamWriter(insName);
+
+                Console.WriteLine($"Insurance Company: {n.Key}");
                 var sorted = n.OrderBy(s => s.lastName).ThenBy(s => s.firstName).ToList();
                 foreach (var i in sorted)
                 {
-                  Console.WriteLine($"{i.lastName} {i.firstName}");
+                    streamWriter.WriteLine($"{i.lastName} {i.firstName}");
+                    Console.WriteLine($"{i.lastName} {i.firstName}");
                 }
+                streamWriter.Close();
             }
 
 
