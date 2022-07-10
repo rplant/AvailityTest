@@ -13,7 +13,7 @@ namespace csv_tester
             csvSplitter csv = new csvSplitter();
 
             var result = csv.readFile(@"c:\\test.txt");
-
+            .
             var groupbyInsurance = from r in result
                                    group r by r.insurance into InsGroup
                                    orderby InsGroup.Key
