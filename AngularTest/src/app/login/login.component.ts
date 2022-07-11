@@ -10,16 +10,16 @@ import { User } from './user';
 
 export class LoginComponent implements OnInit {
   @Output() regEvent = new EventEmitter<User>();
-  @Output() firstName: string;
-  @Output() lastName:  string;
-  @Output() npiNumber: string;
-  @Output() address: string;
-  @Output() email: string;
-  @Output() user: User;
+
+  regForm = new FormGroup({
+    firstName: new FormControl(null),
+    lastName: new FormControl(null),
+    npiNumber: new FormControl(null),
+    address: new FormControl(null),
+    email: new FormControl(null)
+  });
 
   constructor() {
-
-
   }
 
   ngOnInit() {
@@ -27,11 +27,12 @@ export class LoginComponent implements OnInit {
 
   onRegister()
   {
-    let user = { firstName: this.firstName,
-                 lastName: this.lastName,
-                 npiNumber: this.npiNumber,
-                 address: this.address,
-                 email: this.email  } as User;
+    let user = { firstName: this.regForm.controls.firstName.value,
+                 lastName: this.regForm.controls.lastName.value,
+                 npiNumber: this.regForm.controls.npiNumber.value,
+                 address: this.regForm.controls.address.value,
+                 email: this.regForm.controls.email.value  } as User;
+
     this.regEvent.emit(user);
   }
 

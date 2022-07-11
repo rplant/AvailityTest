@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { User } from '../login/user';
 
 @Component({
   selector: 'app-results-grid',
@@ -6,13 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./results-grid.component.css']
 })
 export class ResultsGridComponent implements OnInit {
-  results: any[];
+  @Input() user: User;
+  @Input() results: any[];
   regEvent: any;
-
 
   constructor()
   {
-      this.regEvent.Subscribe()
   }
 
   ngOnInit() {

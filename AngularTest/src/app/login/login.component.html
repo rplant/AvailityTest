@@ -1,51 +1,61 @@
+<form [formGroup]="regForm">
+
   <div class="card">
     <div class="row form-group">
+
       <div class="col-33">
       </div>
+
       <div class="col-33">
         <div class="card-body">
+
           <div class="row">
             <div class="col">
-              First Name:
+             <label for="firstName" class="form-label">First Name</label>
             </div>
             <div class="col">
-              <input type="text" [(ngModel)]="firstName">
+              <input type="text" class="form-control" formControlName="firstName">
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              Last Name:
+              <label for="lastName" class="form-label">Last Name</label>
             </div>
             <div class="col">
-              <input type="text" [(ngModel)]="lastName">
+              <input type="text" class="form-control" formControlName="lastName">
             </div>
           </div>
 
           <div class="row">
             <div class="col">
-              NPI Number:
+              <label for="npiNumber" class="form-label">NPI Number</label>
             </div>
             <div class="col">
-              <input type="text" [(ngModel)]="npiNumber">
+              <input type="text" class="form-control"  formControlName="npiNumber">
             </div>
           </div>
+
           <div class="row">
             <div class="col">
               Address:
             </div>
             <div class="col">
-              <input type="text" [(ngModel)]="address">
+              <input type="text" class="form-control"  formControlName="address">
             </div>
           </div>
+
           <div class="row">
             <div class="col">
               Email Address:
             </div>
             <div class="col">
-              <input type="text" [(ngModel)]="email">
+              <input type="text" class="form-control" formControlName="email">
             </div>
           </div>
-          <button (click)="onRegister()">Register</button>
+          <button (click)="onRegister(user)">Register</button>
         </div>
       </div>
+    </div>
+  </div>
+</form>

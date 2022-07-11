@@ -8,23 +8,11 @@ import { User } from './login/user';
 })
 export class AppComponent {
   results: User[] = [];
-  firstName: string;
-  lastName:  string;
-  npiNumber: string;
-  address: string;
-  email: string;
-  user: User;
 
-  onRegister()
+  onAddItem(user: User)
   {
-    let user = { firstName: this.firstName,
-                 lastName: this.lastName,
-                 npiNumber: this.npiNumber,
-                 address: this.address,
-                 email: this.email  } as User;
-
-    this.results.push(user);
-
+      this.results.push(user);
+      console.log(this.results);
   }
 
   onClear()

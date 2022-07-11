@@ -1,75 +1,7 @@
+<app-login (regEvent)="onAddItem($event)" ></app-login>
+<app-results-grid [results]="results"></app-results-grid>
 <div class="card">
-  <div class="row form-group">
-    <div class="col-33">
-    </div>
-    <div class="col-33">
-      <div class="card-body">
-        <div class="row">
-          <div class="col">
-            First Name:
-          </div>
-          <div class="col">
-            <input type="text" [(ngModel)]="firstName">
-          </div>
-        </div>
+  <button style="width:100px" (click)="onClear()">Clear</button>
+</div>
 
-        <div class="row">
-          <div class="col">
-            Last Name:
-          </div>
-          <div class="col">
-            <input type="text" [(ngModel)]="lastName">
-          </div>
-        </div>
 
-        <div class="row">
-          <div class="col">
-            NPI Number:
-          </div>
-          <div class="col">
-            <input type="text" [(ngModel)]="npiNumber">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Address:
-          </div>
-          <div class="col">
-            <input type="text" [(ngModel)]="address">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Email Address:
-          </div>
-          <div class="col">
-            <input type="text" [(ngModel)]="email">
-          </div>
-        </div>
-        <button (click)="onRegister()">Register</button>
-      </div>
-    </div>
-  </div>
-    <div class="card">
-    <table class="table card-body">
-      <thead>
-        <th>FirstName</th>
-        <th>LastName</th>
-        <th>BPI Number</th>
-        <th>Address</th>
-        <th>Email</th>
-      </thead>
-      <tbody>
-        <tr *ngFor="let result of results; let i = index">
-          <td>{{firstName}}</td>
-          <td>{{lastName}}</td>
-          <td>{{bpiNumber}}</td>
-          <td>{{address}}</td>
-          <td>{{email}}</td>
-        </tr>
-      </tbody>
-    </table>
-    <button style="width:100px" (click)="onClear()">Clear</button>
-    </div>
-
-  </div>

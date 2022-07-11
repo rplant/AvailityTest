@@ -8,11 +8,11 @@
     </thead>
     <tbody>
         <tr *ngFor="let result of results; let i = index">
-           <td>{{firstName}}</td>
-           <td>{{lastName}}</td>
-           <td>{{bpiNumber}}</td>
-           <td>{{address}}</td>
-           <td>{{email}}</td>
+           <td>{{result.firstName}}</td>
+           <td>{{result.lastName}}</td>
+           <td>{{result.bpiNumber}}</td>
+           <td>{{result.address}}</td>
+           <td>{{result.email}}</td>
         </tr>
     </tbody>
   </table>
