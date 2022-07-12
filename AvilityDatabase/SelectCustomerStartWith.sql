@@ -5,6 +5,7 @@ AS
 		c.LastName
 	from Customer c
 	where c.LastName like 's%'
+	order by c.LastName desc
 
 
 RETURN 0
