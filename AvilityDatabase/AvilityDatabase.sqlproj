@@ -22,6 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -64,5 +65,8 @@
     <Build Include="SeectSixMonrthTotalByCustomer.sql" />
     <Build Include="SelectCustomerStartWith.sql" />
     <Build Include="SelectOrderdLastSizeMonthsByCustomer_.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AvilityDatabase.publish.xml" />
   </ItemGroup>
 </Project>

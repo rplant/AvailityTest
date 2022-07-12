@@ -1,10 +1,10 @@
 ﻿CREATE PROCEDURE [dbo].[SelectCustomerStartWithS]
-	@param1 int = 0,
-	@param2 int
 AS
-	Select * 
+	Select 
+		c.FirstName,
+		c.LastName
 	from Customer c
-	where c.firstName like 's%'
+	where c.LastName like 's%'
 
 
 RETURN 0

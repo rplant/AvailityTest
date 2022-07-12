@@ -1,10 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[SelectOrderdLastSizeMonthsByCustomer]
 	@customerid int
 AS
-	With TotalOrders_cte as
-	(select sum(ol.Cost)
-	 from orderline ol)
-
 	SELECT *
 	from OrderLine ol
 	inner join [Order] o on o.OrderID = ol.OrdID

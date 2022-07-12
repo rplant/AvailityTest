@@ -1,9 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[SelectSizeMonthTotalByCustomer]
 	@id int
 AS
-	With TotalOrders as
-	(select sum(ol.Cost)
-	 from orderline ol)
 
 	SELECT *
 	from OrderLine ol
